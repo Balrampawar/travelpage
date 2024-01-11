@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+html,body{
+    height: 100%;
+}
+#preloader{
+    background: #000 url("images/Infinity.gif") no-repeat center center ;
+    background-size: 39px;
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    z-index: 100;
+}
+.page1{
+    
+    background-image:linear-gradient(rgba(20, 20, 20, 0.371), rgba(0, 0, 0, 0.800)20%),url(images/bg2.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*nav bar start*/
+nav{
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap:wrap; */
+    font-size: 2vh;
+    background-color: rgba(41, 43, 43, 0.36) ;
+    backdrop-filter: blur(12px);
+
+}
+nav img{
+    height: 6vh;
+}
+nav ul li{
+    display: inline-block;
+list-style: none;
+padding:2vh;  
+}
+ a{
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing:0.5px ;
+
+ }
+ a:hover{
+    text-decoration: underline;
+    transition: .5s;
+ }
+
+input{
+    padding: 1vh 5vh;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius:40px ; 
+    background-color: transparent;
+   
+}
+input::placeholder{
+    color: #ffffff;
+}
+i{
+    color: #fff;
+    cursor: pointer;
+}
+#Gallery{
+    color: cyan;
+
+}  
+/*nav bar complete*/
+main{
+    flex: 1 1 auto;
+}
+.images1{
+    width: 100%; 
+    text-align: center;
+    margin-top: 10vh;
+    
+}
+.images1 ul{
+    display: flex;
+    list-style: none;
+}
+.images2{
+    
+    width: 100%; 
+    text-align: center;
+    margin-top: 10vh;
+    
+}
+.images2 ul{
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    margin-top: 10vh;
+}
+.box img{
+    width: 70%;
+    margin-top: 7vh;
+    border: 1px  solid white;
+
+}
+.box img:hover{
+    scale: 150%;
+    transition: .5s;
+    z-index: 3px;
+}
+
+@media (max-width:858px) {
+    .page1{
+        height: auto;
+    }
+    nav img{
+        height: 4vh;
+    }
+    
+    nav{
+        font-size: 1vh;
+    }
+    
+    .images1 ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .images2 ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    .box img:hover{
+        scale: 120%;
+        transition: .5s;
+        z-index: 3px;
+    }
+
+}
+
+
+/* footer start */
+
+footer{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    bottom: 0px;
+    background-color: #252525;
+}
+footer i{
+    margin-top: 1vh;
+    
+} 
+footer p{
+    margin-top: 1vh;
+    
+} 

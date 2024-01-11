@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wonder Travels</title>
+    <script src="https://kit.fontawesome.com/7a51451734.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <div class="page1">
+    <header>
+        <div class="navbar">
+            <nav>
+                <img src="images/logo.png" alt="logo">
+              
+                <ul id="menu">
+                    <li><a  href="Home.html" id="home">Home </a></li>
+                    <li><a  href="about.html" id="About us">About Us</a></li>
+                    <li><a  href="tours.html" id="Tours">Tours</a></li>
+                    <li><a  href="gallery.html" id="Gallery">Gallery</a></li>
+                    <li><a  href="contect.html" id="Contact">Contact</a></li>
+                    
+                </ul>
+              
+            </nav>
+        </div>
+        <hr>
+    </header>  
+    
+    <main>
+        <div class="form">
+            
+        <div id="booking-form">
+            <h2>Book Your Trip Escape</h2>
+            <form id="trip-form">
+                 <label for="person">Name of People:</label>
+                <input type="text" id="person" name="person" min="1" required>
+                <label for="destination">Select Vehicle:</label>
+                <select id="destination" name="destination">
+                    <option value="Select vehicle">Select vehicle</option>
+                    <option value="Aeroplane">Aeroplane</option>
+                    <option value="Trains">Trains</option>
+                    <option value="Buses">Buses</option>
+                </select>
+
+                <label for="dates">Select Dates:</label>
+                <input type="date" id="dates" name="dates" required>
+
+                <label for="people">Number of People:</label>
+                <input type="number" id="people" name="people" min="1" required>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+        </div>
+    </div>
+    </main>
+    
+    <footer>
+        <hr id="bottom">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-facebook"></i><br>
+       <P> &copy;2021 | All Rights Reserved By WONDER TRAVELS</P>
+    
+    </footer>
+    
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display="none";
+    
+        })
+    </script>
+    <script src="book.js"></script>
+   
+    </div>
+    </body>
+    </html>
